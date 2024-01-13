@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --text-color: hsl(215, 51%, 70%);
+  --ETH-color: hsl(178, 100%, 50%);
+  --background-Color: hsl(217, 54%, 11%);
+  --background-Card: hsl(216, 50%, 16%);
+  --border-Line: hsl(215, 32%, 27%);
+}
+
+/*ALLG.*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background: var(--background-Color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: white;
+}
+
+/*Card-styling*/
+.content {
+  background: var(--background-Card);
+  height: auto;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.content .margin-box {
+  margin: 25px;
+  border-radius: 10px;
+}
+
+
+/*MAIN-Content*/
+.quadrat {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.text-container {
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*Text-Container*/
+.text-container h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.course-container {
+  margin: 25px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.course-container p {
+  margin-left: 10px;
+}
+
+.ETH-container,
+.clock-container {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ETH-container p {
+  color: var(--ETH-color);
+}
+
+
+/*Autor Container*/
+.autor-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-Line);
+}
+
+.autor-container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 15px;
+  border: 1px white solid;
+  border-radius: 50%;
+}
